@@ -6,7 +6,7 @@ body{
 	margin:1%;
 	padding:1%;
 	font-size:110%;
-    font-family: 'Courier New','Gill Sans MT', monospace;
+    font-family: 'Roboto','Courier New','Gill Sans MT', monospace;
     
 }
 header nav ul{
@@ -245,7 +245,7 @@ nav li:hover {
 footer{
     font-size: 14px;
     text-align:left;
-    color:white;
+    color:black;
     padding: 100px 0px;
 }
 
