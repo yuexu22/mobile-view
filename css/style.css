@@ -1,0 +1,249 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body{
+    background-color: antiquewhite;
+    background-image: url("../images/elcarito-background.jpg");
+	margin:1%;
+	padding:1%;
+	font-size:150%;
+    font-family: 'Courier New','Gill Sans MT', monospace;
+    
+}
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+  
+  *:focus{
+    border: 2px solid black;
+  }
+
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 35px;
+	font-weight: bold;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: darkblue;
+}
+
+h5{
+    font-size: 15px;;
+}
+.active{
+	background: white;
+    text-transform: uppercase;
+	text-align: center;
+}
+
+.active a{
+	text-decoration: none;;
+}
+/*animation*/
+
+/*Style the images*/
+img{
+    height: auto;
+   border: 2px solid grey;
+    padding: 2px;
+    border-radius: 10px;
+    margin: 10% 10% 10% 45%;
+    display: block;
+    
+    
+}
+.grid-template-columns img{
+    object-fit: cover;
+}
+.flex-container{
+    flex-wrap: wrap;
+}
+img:hover{
+    
+    border: 2px solid pink;
+    height: auto;
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10% 10% 10% 45%;
+    display: block;
+    
+}
+.gallery{
+    --gap: 16px;
+    --num-cols:3;
+    --row-height:300px;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap:var(--gap);
+    grid-gap: 2px;
+}
+/*flex img*/
+
+.flex-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.single-img{
+    padding: 10px 0px;
+}
+img:hover{
+    opacity: .5s;
+    transition:0.9s;
+}
+
+
+
+
+
+
+/* profile-start*/
+
+.profile-introduction{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: 5fr 5fr;
+    column-gap: 5px;
+    row-gap: 10px;
+   
+}
+.profile-introduction .subtitle{
+    grid-column: 2/span 1;
+    grid-row: 1 /span 1;
+    align-self: center;
+    justify-self: center;
+}
+.profile-text{
+    grid-column: 1/span 2;
+    grid-row: 2/span 1;
+    font-size: 1.1em;
+}
+
+.profile-img{
+    width: 400px;
+    height: 400px;
+    grid-column: 1/span 1;
+    grid-row: 1/span 1; 
+    position:relative;
+}
+.profile-img img{
+width: 50%;
+height: 50%;
+}
+.transition-img{
+    position: absolute;
+    top:0px;
+    left:0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.transition-img:hover{
+    opacity: 1;
+}
+
+
+/* profile-end*/
+
+/*form*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    position:relative;
+    width: 100%;
+    padding:80px 2%;
+}
+.contact-form{
+    max-width: 550px;
+    margin:0 auto;
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px;
+}
+.input-fields{
+display:flex;
+flex-direction: column;
+margin-right: 4%;
+}
+.input-fields,
+.msg{
+    width:48%;
+
+}
+.input-fields .input,
+.msg textarea{
+    margin:10px 0;
+    border-bottom: 2px solid #c5ecfd;
+    width:100%;
+
+}
+.msg textarea{
+    height: 150px;
+}
+
+.btn{
+    background:#39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color:#fff;
+    cursor:pointer;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+nav li{
+	background-color: #E8D8ED;
+	padding: 20px ;
+	display: inline-block;
+    text-align: center;
+    border:1px solid #E8D8ED;
+    width: 20%;
+}
+
+nav li:hover {
+    background-color: pink;
+  }
+
+
+footer{
+    font-size: 14px;
+    text-align:left;
+    color:white;
+    padding: 100px 0px;
+}
+
